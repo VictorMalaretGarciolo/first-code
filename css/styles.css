@@ -1,8 +1,6 @@
 * {
   box-sizing: border-box;
-  font-family: 'Architects Daughter', cursive;
-  font-family: 'Sansita Swashed', cursive;
-  font-size:20px;
+  font-family: 'Quicksand', sans-serif;
 }
 
 body {
@@ -11,8 +9,10 @@ body {
 
 /* Style the header */
 .header {
-  background-color: aquamarine ;
-  padding: 20px;
+  background-image: url('../img/pexels.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+  padding: 10% 20px;
   text-align: center;
 }
 
@@ -22,16 +22,19 @@ body {
 
 
 /* Create three equal columns that floats next to each other */
-.column {
+.one-column {
   float: left;
   width: 100%;
   padding: 5% 20% 0 20%;
 }
 
-.column h2 {
-color: aquamarine; 
+.one-column h1 {
 text-align: center;
 }
+
+.one-column h1, .one-column h2 {
+  text-align: center;
+  }
 
 /* Clear floats after the columns */
 .row:after {
@@ -41,18 +44,29 @@ text-align: center;
 }
 
 /*Image Gallery*/
-.gallery {
+
+#cadetblue {
+ background-color: cadetblue;
+}
+
+.two-column {
+padding: 20px;
+float: left;
+width: 50%;
+}
+
+.three-column {
   padding: 20px;
   float: left;
   width: 33.33%;
 }
 
-.gallery img {
-  width: 100%;
+.three-column img {
+width: 100%;
 }
 
-.gallery desc {
-  padding: 15px;
+.three-column .desc {
+  padding: 10px;
   text-align: center;
 }
 
